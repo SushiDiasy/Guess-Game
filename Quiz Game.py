@@ -1,13 +1,14 @@
 #SA
-print(" Hello! Welcome to a terminal quiz! ")
 
-Name = input(" What would you like your player name to be? ")
-startgameques = input(f"Hey {Name}, Do you want to play? ")
+print("Hello! Welcome to a terminal quiz! ")
 
-if startgameques.lower() != "yes":
+startgameques = input("Would you like to play?")
+
+if startgameques.lower() == "no":
     quit()
-elif startgameques.lower() != "no":
-    print("Let's dive in! ")
+elif startgameques.lower() == "yesYe":
+    name = input("What would you like your player name to be? ")
+    print(f"Okay {name}, Let's dive in!")
 
 score = 0
 quesnum = 0
