@@ -1,19 +1,19 @@
 import random
 
-print('The Number Guessing Game')
-user_input = input("Type a number: ")
+print('Welcome to The Number Guessing Game')
+user_input = input("Please type a number: ")
 
 if user_input.isdigit():
     user_input = int(user_input)
-
-    if user_input <= 0:
-        print('Number should be greater tahn 0')
+    
+elif user_input <= 0:
+        print('Note that the Number should be greater than 0')
         quit()
 else:
     print('Value should be a number')
     quit()
 
-num_gen = random.randint(0, user_input)
+num_maker = random.randint(0, user_input)
 guess = 0
 
 while True:
@@ -25,12 +25,12 @@ while True:
         print('Please type a number next time.')
         continue
 
-    if user_guess == num_gen:
+    if user_guess == num_maker:
         print("You got it!")
         break
-    elif user_guess > num_gen:
+    elif user_guess > num_maker:
         print("You were above the number!")
     else:
         print("You were below the number!")
 
-print("You got it in", guess, "guesses")
+print("Congrats! You got it in", guess, "guesses")
