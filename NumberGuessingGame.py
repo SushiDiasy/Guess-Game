@@ -33,4 +33,4 @@ while True:
     else:
         print("You were below the number!")
 
-print("Congrats! You got it in", guess, "guesses")
+print(f"Congrats! You got it in {guess} guesses")
